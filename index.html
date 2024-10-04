@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentines!</title>
+    <link rel="stylesheet" href="mstyle.css">
+    <script>
+        function changeTextAndRedirect() {
+            var button = document.querySelector('.hover');
+            var textElement = document.querySelector('.text span');
+            var text2Element = document.querySelector('.text2'); // Selecting text2
+
+            if (button.textContent === "Next") {
+                button.textContent = "Next 🤔";
+                textElement.textContent = "Here's a gift...";
+                text2Element.style.display = 'none'; // Hide text2
+            } else {
+                // Redirect to another HTML page
+                window.location.href = "flowers.html";
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="happy-valentines">
+    <div class="valentines-day-card">
+      <div class="clouds"></div>
+      <div class="hearts">
+        <div class="heartOne">
+          <div class="left-side"></div>
+          <div class="right-side"></div>
+        </div>
+        <div class="heartTwo">
+          <div class="left-side"></div>
+          <div class="right-side"></div>
+        </div>
+        <div class="heartThree">
+          <div class="left-side"></div>
+          <div class="right-side"></div>
+        </div>
+        <div class="heartFour">
+          <div class="left-side"></div>
+          <div class="right-side"></div>
+        </div>
+        <div class="heartFive">
+          <div class="left-side"></div>
+          <div class="right-side"></div>
+        </div>
+      </div>
+      <div class="text">
+        <span>I hope you're doing well</span>
+        <div class="text2">right now.</div>
+      </div>
+    </div>
+    <button class="hover" onclick="changeTextAndRedirect()">Next</button>
+</div>
+</body>
+</html>
