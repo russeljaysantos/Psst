@@ -32,8 +32,8 @@ body {
 }
 
 .flowers {
-  position: relative;
-  transform: scale(0.7);
+  transform: scale(1);
+  transform-origin: bottom center;
 }
 
 .flower {
@@ -983,4 +983,5 @@ mask-image: linear-gradient(to top, transparent 40%, #FFB6C1 80%) !important;
 }
 .not-loaded * {
   animation-play-state: paused !important;
+
 }
